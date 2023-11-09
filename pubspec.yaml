@@ -61,6 +61,11 @@ flutter:
 
   assets:
     - images/yemek1.jpg
+    - images/yemek2.jpg
+    - images/yemek3.jpg
+    - images/yemek4.jpg
+    - images/yemek5.jpg
+    - images/yemek6.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
