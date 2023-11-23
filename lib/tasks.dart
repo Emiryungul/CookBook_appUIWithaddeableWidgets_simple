@@ -11,6 +11,8 @@ class Tasks extends StatefulWidget {
 class _TasksState extends State<Tasks> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      appBar: AppBar(centerTitle: true,title: Text("Recipes"),),
+    );
   }
 }

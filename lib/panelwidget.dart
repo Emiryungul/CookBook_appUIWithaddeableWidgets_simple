@@ -12,8 +12,8 @@ class PanelW extends StatelessWidget {
       children: [
         Container(
           margin: const EdgeInsets.all(16),
-          height: 240,
-          width: 240,
+          height: 210,
+          width: 300,
           decoration: BoxDecoration(borderRadius: BorderRadius.circular(15),color: Colors.red,image: DecorationImage(image: AssetImage('images/${recipe['image']}'),fit: BoxFit.cover)),
         ),
         Positioned(

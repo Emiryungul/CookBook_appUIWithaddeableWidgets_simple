@@ -40,13 +40,12 @@ class MyHomePage extends StatelessWidget {
                 child: ListView(
                   scrollDirection: Axis.horizontal,
                   children  : const [
-                    containerwidget(text: 'one piece', icon: Icon(Icons.flag,color: Colors.white),),
-                    containerwidget(text: 'nba', icon: Icon(Icons.sports_basketball,color: Colors.white,),),
-                    containerwidget(text: 'politics', icon: Icon(Icons.person,color: Colors.white),),
-                    containerwidget(text: 'movies', icon: Icon(Icons.movie_creation,color: Colors.white),),
-                    containerwidget(text: 'music', icon: Icon(Icons.music_note_sharp,color: Colors.white),),
-                    containerwidget(text: 'britney spears', icon: Icon(Icons.mic_external_on_sharp,color: Colors.white),),
-                    containerwidget(text: 'league of legends', icon: Icon(Icons.videogame_asset_rounded,color: Colors.white),),
+                    containerwidget(text: 'Deserts', icon: Icon(Icons.flag,color: Colors.white),),
+                    containerwidget(text: 'Cool Treats!!', icon: Icon(Icons.sports_basketball,color: Colors.white,),),
+                    containerwidget(text: 'New cookie recipes', icon: Icon(Icons.person,color: Colors.white),),
+                    containerwidget(text: 'Cool Tricks', icon: Icon(Icons.movie_creation,color: Colors.white),),
+                    containerwidget(text: 'boreks', icon: Icon(Icons.music_note_sharp,color: Colors.white),),
+                    containerwidget(text: 'Cold and Hot Brews', icon: Icon(Icons.mic_external_on_sharp,color: Colors.white),),
 
                   ]
 
@@ -63,7 +62,7 @@ class MyHomePage extends StatelessWidget {
 
               SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
-                padding: EdgeInsets.only(left: 20,right: 20),
+                padding: const EdgeInsets.only(left: 20,right: 20),
                 child: Row(
                   children : panelList.map((value) => PanelW(recipe: value)).toList(),
                 ),
@@ -76,22 +75,13 @@ class MyHomePage extends StatelessWidget {
                   Boldtextwidget(text: 'Recent Recipes', color: Colors.black, size: 20),
                 ],
               ),
-              Container(
-                  margin: EdgeInsets.only(right: 16),
-                  child: const SingleChildScrollView(
-                    scrollDirection: Axis.horizontal,
-                    child: Row(
-                      children: [
-                        horizontalwidget(),
-                        horizontalwidget(),
-                        horizontalwidget(),
-                        horizontalwidget(),
-                        horizontalwidget(),
-                        horizontalwidget(),
-                      ],
-                    ),
-                  ),
-              )
+              SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                padding: const EdgeInsets.only(left: 20,right: 20),
+                child: Row(
+                  children : panelList.map((value) => horizontalwidget(food: value)).toList(),
+                ),
+              ),
 
 
 
